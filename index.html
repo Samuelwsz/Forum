@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirLinesBCA</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="MediaQuery.css" />
+  </head>
+  <body onresize="mudouTamanho()">
+    <header>
+      <h1>AirLinesBCA</h1>
+      <img src="img/logo.png" width="50px" height="50px" alt="" />
+      <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+      <menu id="itens">
+        <ul>
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">PACOTES</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </menu>
+    </header>
+    <div class="container">
+      <main>
+        <article>
+          <h2>AirLinesBCA</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur debitis officia dolorum, optio magni at quibusdam
+            commodi a sint dolore tempore nemo reprehenderit libero animi harum
+            vitae, quos repudiandae neque? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Iure tempora ullam magnam sunt iste,
+            sit dicta commodi, eum, a sequi dolor nemo quos vel ratione sed
+            obcaecati? Cumque, enim a.
+          </p>
+        </article>
+      </main>
+      <main>
+        <article>
+          <h2>Planejar viagem</h2>
+          <form action="">
+            <div>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" />
+            </div>
+            <div>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" />
+            </div>
+            <div>
+              <label for="msg">Telefone:</label>
+              <input type="text" />
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </article>
+      </main>
+      <script>
+        function mudouTamanho() {
+          if (window.innerWidth >= 768) {
+            itens.style.display = "block"
+          } else {
+            itens.style.display = "none"
+          }
+        }
+
+        function clickMenu() {
+          if (itens.style.display == "block") {
+            itens.style.display = "none"
+          } else {
+            itens.style.display = "block"
+          }
+        }
+      </script>
+    </div>
+    <div class="container">
+      <main>
+        <article>
+          <h3>Lugar x</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            sapiente voluptas autem quia deleniti rem corrupti sunt non
+            similique neque aliquam fuga quam quibusdam nam veritatis,
+            laboriosam corporis sed ipsum.
+          </p>
+          <img src="./img/x.jpg" width="250px" height="150px" alt="" />
+          <button type="submit">Saber mais</button>
+          <h3>Lugar y</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+            est unde illum exercitationem, accusamus rerum omnis cum ipsum?
+            Veniam sed nisi fuga soluta ea? Laborum, laudantium libero. Labore,
+            pariatur possimus?
+          </p>
+          <img src="./img/y.jpg" width="250px" height="150px" alt="" />
+          <button type="submit">Saber mais</button>
+        </article>
+      </main>
+      <main>
+        <article>
+          <h3>Lugar z</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero
+            pariatur sunt quod saepe non odio adipisci molestiae natus sapiente.
+            Illum facilis nisi distinctio quas officiis ad explicabo, architecto
+            omnis.
+          </p>
+          <img src="./img/z.jpg" width="250px" height="150px" alt="" />
+          <button type="submit">Saber mais</button>
+          <h3>Lugar V</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            at ipsum? At, cumque ipsum possimus earum, ratione dignissimos
+            exercitationem nesciunt iure molestiae voluptatibus atque ducimus
+            provident saepe necessitatibus odio corporis.
+          </p>
+          <img src="./img/v.jpg" width="250px" height="150px" alt="" />
+          <button type="submit">Saber mais</button>
+        </article>
+      </main>
+    </div>
+    <div class="container">
+      <main>
+        <h3>Sobre</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+          incidunt perferendis aperiam, commodi quasi debitis! Libero ullam
+          minus maxime possimus, blanditiis earum! Dignissimos libero veritatis
+          dolores veniam earum soluta laudantium!
+        </p>
+      </main>
+    </div>
+    <footer>
+      <p>Autor:Samuel</p>
+      <p><a href="#">www@example.com</a></p>
+    </footer>
+  </body>
+</html>
